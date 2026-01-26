@@ -5,6 +5,7 @@ import (
 	"gorm.io/gorm"
 )
 
+// DB_URI="postgres://postgres:postgres@localhost:5433/gopg?sslmode=disable"
 const pgConn = "host=localhost user=postgres password=postgres dbname=gopg port=5433 sslmode=disable"
 
 func GetDB() (*gorm.DB, error) {
